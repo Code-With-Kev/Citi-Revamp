@@ -1,0 +1,100 @@
+.popup{
+    position: absolute;
+    width: 25%;
+    min-height: 5rem;
+    background-color: #fff;
+    display: flex;
+    top: 22%;
+    left: 2.7%;
+    z-index: 500;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 1rem rgba($color-black, .35);
+    animation: fade-out 1s ease-in;
+
+    @include clearfix;
+
+    &__left{
+        flex: 1;
+    }
+
+    &__right{
+        flex: 1;
+    }
+
+    &__item{
+        font-family: Interstate,sans-serif;
+        font-size: 1.6rem;
+        color: $text-dark;
+        line-height: 24px;
+        padding: 1rem;
+        text-decoration: none;
+        z-index: 501;
+        position: relative;
+        transition: .3s all ease;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+
+        &::before{
+            content: "";
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 502;
+            background-color: red;
+
+            &:hover{
+                width: 100%;
+            }
+
+        }
+
+        &:hover{
+            background-color: $color-primary-dark;
+            
+            & .popup__text {
+            color: white;
+            }
+        }
+    }
+
+    &__text{
+        text-decoration: none;
+        color: $text-dark;
+        transition: .3 all ease-in;
+        z-index: 605;
+    }
+}
+
+.swipeFade {
+    text-decoration: none; 
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.swipeFade:before{
+    content: ''; 
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    background-color: #00e1ff; 
+    height: 100%; 
+    width: 100%;
+    z-index: -1; 
+    transform-origin: left; 
+    transform: translate(-100%); 
+    opacity: .5;
+    transition: all 1s; 
+}
+
+.swipeFade:hover:before {
+    transform: translate(0%); 
+}
+
+.swipeFade:hover{
+    color:white;
+}

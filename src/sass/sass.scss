@@ -1,0 +1,34 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/animations";
+
+
+@import "components/header";
+@import "components/nav";
+@import "components/alert";
+@import "components/hero";
+@import "components/login";
+@import "components/button";
+@import "components/slider";
+@import "components/popup";
+
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    z-index: -10;
+}
+
+html {
+    font-size: 62.5%;
+}

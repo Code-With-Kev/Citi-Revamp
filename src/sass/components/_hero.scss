@@ -1,0 +1,88 @@
+.hero{
+    padding: 4.5rem 0;
+    background-image: url(../images/citi_background.jpg);
+    background-size: cover;
+
+    &__content{
+        width: 65vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        @include clearfix;
+
+        &--offer{
+            display: flex;
+        }
+    }
+
+
+    &__left{
+        text-align: start;
+        margin-right: 2rem;
+        min-width: 45rem;
+        animation: moveInLeft 1s ease-in;
+        animation-fill-mode: backwards;
+
+        &--heading{
+            font-family: Interstate,sans-serif;
+            font-size: 1.6rem;
+            color: $text-dark;
+            letter-spacing: 2px;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+
+        &--title{
+            font-family: Interstate,sans-serif;
+            font-weight: 600;
+            font-size: 4.2rem;
+            color: $text-dark;
+            letter-spacing: 0;
+            line-height: 50px;
+            margin-bottom: 3rem;
+        }
+
+        &--description{
+            font-family: Interstate,sans-serif;
+            font-size: 1.6rem;
+            color: $text-dark;
+            line-height: 24px;
+            margin-bottom: 3rem;
+        }
+
+    }
+
+    &__middle{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 32rem;
+        max-height: 30rem;
+        animation: moveInLeft 1s ease-in;
+        animation-fill-mode: backwards;
+
+    }
+
+    &__image{
+        width: 100%;
+        height: 80%;
+        max-width: 320px;
+        transform: scale(1);
+        margin: 0 auto;
+    }
+
+    &__right{
+        text-align: start;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: end;
+        align-items: center;
+        animation: moveInLeft 1s ease-in;
+        animation-fill-mode: backwards;
+
+        
+    }
+
+}

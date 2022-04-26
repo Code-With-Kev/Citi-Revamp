@@ -1,0 +1,57 @@
+.header{
+    height: 88px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        padding-left: 4rem;
+        height: 8.8rem;
+        animation: moveInLeft .5s ease-in;
+
+    }
+
+    &__icon-box{
+        display: flex;
+        padding-top: 2rem;
+        animation: moveInRight .5s ease-in;
+
+        
+        &--section{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding-right: 3rem;
+            cursor: pointer;
+
+            &:hover{
+                color: $color-primary-light;
+            }
+        }
+
+    }
+
+    &__icon-text{
+        padding-top: 1rem;
+        font-family: Interstate-Regular, sans-serif;
+        font-size: 1.1rem;
+        
+    }
+
+    &__icon{
+        
+
+        &--right {
+            
+        }
+
+        &--left{
+
+        }
+    }
+
+
+}
