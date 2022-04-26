@@ -6,3 +6,7 @@
 1. Loading Animations
 2. Dark Mode
 3. Refactoring
+4. Make Responsive
+5. Add Dark Background When Navigation is Triggered to Prevent Other Links From Being Accessed
+6. Animate A Data Calculator
+7. Create A Looping Animation with the Logo
